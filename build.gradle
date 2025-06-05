@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.javalicious'
+version = '1.0'
+
+//repositories {
+//    mavenCentral()
+//}
+dependencies {
+    implementation 'com.google.cloud:google-cloud-aiplatform:2.50.0'
+    implementation 'org.slf4j:slf4j-simple:2.0.12'
+}
+
+application {
+    mainClass = 'GeminiClient'  // Update this to match your actual package/class
+}
